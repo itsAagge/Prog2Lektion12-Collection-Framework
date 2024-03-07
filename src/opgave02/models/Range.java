@@ -13,6 +13,7 @@ public class Range implements Iterable<Integer>{
 
     @Override
     public Iterator<Integer> iterator() {
-        return null;
+        Iterator<Integer> rangeInterator = new RangeIterator(from, to);
+        return rangeInterator;
     }
 }
